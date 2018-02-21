@@ -1,0 +1,31 @@
+{
+  "name": "ngx-jest-snapshot-serializer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Snapshot testing for an Angular application",
+  "repository": "git@github.com:yurii-sorokin/ngx-jest-serializer.git",
+  "author": "Yurii Sorokin <fortyin@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "angular4",
+    "angular5",
+    "jest",
+    "snapshot"
+  ],
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "precommit": "eslint .",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}

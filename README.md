@@ -1,0 +1,38 @@
+# ngx-jest-snapshot-serializer
+
+Plugin that serializes Angular fixture components for [Jest snapshot tests](https://facebook.github.io/jest/docs/en/snapshot-testing.html).
+
+# Install
+
+```console
+$ npm install --save-dev ngx-jest-snapshot-serializer
+```
+
+# Usage
+
+For an individual test file:
+
+```js
+import serializer from 'ngx-jest-snapshot-serializer';
+expect.addSnapshotSerializer(serializer);
+```
+
+For all test files, you need to specify serializer in Jest configuration. For example, in a package.json file:
+
+```json
+{
+  "jest": {
+    "snapshotSerializers": ["ngx-jest-snapshot-serializer"]
+  }
+}
+```
+
+# Further reading
+
+More details about snapshot plugins could be found in [Pretty format package](https://github.com/facebook/jest/tree/v22.4.0/packages/pretty-format#usage-in-jest)
+
+___
+
+Highly inspired by [enzyme-to-json](https://github.com/adriantoine/enzyme-to-json/) package.
+
+
