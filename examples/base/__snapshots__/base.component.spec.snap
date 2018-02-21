@@ -1,0 +1,82 @@
+exports[`BaseComponent should render something 1`] = `
+<xmpl-base
+  class="bound"
+  disabled={false}
+  style="overflow: hidden; display: block"
+  title="super"
+>
+  <div
+    class="container"
+  >
+
+
+    <div
+      class="active"
+      ng-reflect-ng-class="[object Object]"
+    />
+
+
+
+
+
+
+    <input
+      class="no-async"
+      type="text"
+      value={
+        ZoneAwarePromise {
+          "__zone_symbol__state": true,
+          "__zone_symbol__value": 1,
+        }
+      }
+    />
+
+
+    <input
+      class="with-async"
+      type="text"
+      value={2}
+    />
+
+
+    <input
+      class="2w"
+      type="text"
+      value={3}
+      valueChange={[Function]}
+    />
+
+
+
+
+
+
+  Just text
+  YET ANOTHER TEXT
+
+    <button
+      click={[Function]}
+    >
+      Click me!
+    </button>
+
+
+    <svg>
+
+
+      <rect
+        height="100"
+        width="100"
+        x="0"
+        y="0"
+      />
+
+
+    </svg>
+
+
+  </div>
+
+
+</gp-article-card>
+`;

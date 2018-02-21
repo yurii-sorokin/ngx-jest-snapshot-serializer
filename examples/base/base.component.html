@@ -1,0 +1,17 @@
+<div class="container" #id>
+  <div [ngClass]="{'active': !disabled}"></div>
+  <ng-container *ngIf="ifPass">
+    <input class="no-async" type="text" [value]="promiseValue" />
+    <input class="with-async" type="text" [value]="observableValue | async" />
+    <input class="2w" type="text" [(value)]="twoWayValue" />
+  </ng-container>
+  <ng-container *ngIf="ifNotPass">
+    <span>Am I visible?</span>
+  </ng-container>
+  Just text
+  {{'yet another text' | uppercase}}
+  <button (click)="doStuff()">Click me!</button>
+  <svg>
+    <rect x="0" y="0" width="100" height="100" />
+  </svg>
+</div>
