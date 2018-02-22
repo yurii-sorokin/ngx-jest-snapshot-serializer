@@ -27,6 +27,8 @@ For all test files, you need to specify serializer in Jest configuration. For ex
 }
 ```
 
+If you do not set up jest testing in your Angular application yet then look at [this preset](https://github.com/thymikee/jest-preset-angular).
+
 # Example
 
  Example snapshot outputs could be found in the `examples/` directory.
