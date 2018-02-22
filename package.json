@@ -1,6 +1,6 @@
 {
   "name": "ngx-jest-snapshot-serializer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "description": "Snapshot testing for an Angular application",
   "repository": "git@github.com:yurii-sorokin/ngx-jest-serializer.git",
