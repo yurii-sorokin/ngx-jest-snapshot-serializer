@@ -1,4 +1,5 @@
 # ngx-jest-snapshot-serializer
+[![Build Status](https://travis-ci.org/yurii-sorokin/ngx-jest-snapshot-serializer.svg?branch=master)](https://travis-ci.org/yurii-sorokin/ngx-jest-snapshot-serializer)
 
 Plugin that serializes Angular fixture components for [Jest snapshot tests](https://facebook.github.io/jest/docs/en/snapshot-testing.html).
 
