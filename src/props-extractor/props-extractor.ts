@@ -1,5 +1,5 @@
 import * as uniq from 'lodash.uniq'
-import * as omitBy from 'lodash.omitBy'
+import * as omitBy from 'lodash.omitby'
 import { normalizeProp } from './prop-normalizer'
 import { DebugNode } from '../debug-node'
 
