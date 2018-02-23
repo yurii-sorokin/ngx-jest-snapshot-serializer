@@ -19,7 +19,7 @@ import serializer from 'ngx-jest-snapshot-serializer';
 expect.addSnapshotSerializer(serializer);
 ```
 
-For all test files, you need to specify serializer in Jest configuration. For example, in a package.json file:
+For all test files, you need to specify serializer in Jest configuration. For example, in a `package.json` file:
 
 ```json
 {
@@ -38,7 +38,7 @@ If you do not set up jest testing in your Angular application yet then look at [
 
 # Further reading
 
-More details about snapshot plugins could be found in [Pretty format package](https://github.com/facebook/jest/tree/v22.4.0/packages/pretty-format#usage-in-jest)
+More details about snapshot plugins could be found in [Pretty format package](https://github.com/facebook/jest/tree/v22.4.0/packages/pretty-format#usage-in-jest).
 
 ___
 
