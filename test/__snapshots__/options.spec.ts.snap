@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Options should ignore "ng-version" property by default 1`] = `
+<tst-host
+  boundAttr="bound attr value"
+  boundListener={[Function]}
+  class="boundClass"
+  style="display: block"
+>
+  <div
+    anotherAttr="another attr value"
+    anotherInput="another input static value"
+    anotherListener={[Function]}
+    class="staticClass staticClass directiveClassOn"
+    data-another-attr="another data attr value"
+    data-some-attr="some data attr value"
+    ng-reflect-klass="staticClass"
+    ng-reflect-ng-class="[object Object]"
+    ng-reflect-ng-style="[object Object]"
+    someAttr="some attr value"
+    someInput="some input static value"
+    someListener={[Function]}
+    style="directiveStyleRule: directiveStyleRuleValue"
+  >
+    
+          
+    
+          
+    
+          
+    
+          
+    <div>
+      conditional
+    </div>
+    
+          
+    
+        
+  </div>
+</tst-host>
+`;
+
+exports[`Options should ignore specified properties 1`] = `
+<tst-host
+  ng-version="4.4.6"
+>
+  <div
+    anotherAttr="another attr value"
+    anotherInput="another input static value"
+    anotherListener={[Function]}
+    data-another-attr="another data attr value"
+    ng-reflect-klass="staticClass"
+    ng-reflect-ng-class="[object Object]"
+    ng-reflect-ng-style="[object Object]"
+  >
+    
+          
+    
+          
+    
+          
+    
+          
+    <div>
+      conditional
+    </div>
+    
+          
+    
+        
+  </div>
+</tst-host>
+`;
+
+exports[`Options should not preserve binding comments by default 1`] = `
+<tst-host
+  boundAttr="bound attr value"
+  boundListener={[Function]}
+  class="boundClass"
+  style="display: block"
+>
+  <div
+    anotherAttr="another attr value"
+    anotherInput="another input static value"
+    anotherListener={[Function]}
+    class="staticClass staticClass directiveClassOn"
+    data-another-attr="another data attr value"
+    data-some-attr="some data attr value"
+    ng-reflect-klass="staticClass"
+    ng-reflect-ng-class="[object Object]"
+    ng-reflect-ng-style="[object Object]"
+    someAttr="some attr value"
+    someInput="some input static value"
+    someListener={[Function]}
+    style="directiveStyleRule: directiveStyleRuleValue"
+  >
+    
+          
+    
+          
+    
+          
+    
+          
+    <div>
+      conditional
+    </div>
+    
+          
+    
+        
+  </div>
+</tst-host>
+`;
+
+exports[`Options should not preserve binding comments if option is disabled 1`] = `
+<tst-host
+  boundAttr="bound attr value"
+  boundListener={[Function]}
+  class="boundClass"
+  style="display: block"
+>
+  <div
+    anotherAttr="another attr value"
+    anotherInput="another input static value"
+    anotherListener={[Function]}
+    class="staticClass staticClass directiveClassOn"
+    data-another-attr="another data attr value"
+    data-some-attr="some data attr value"
+    ng-reflect-klass="staticClass"
+    ng-reflect-ng-class="[object Object]"
+    ng-reflect-ng-style="[object Object]"
+    someAttr="some attr value"
+    someInput="some input static value"
+    someListener={[Function]}
+    style="directiveStyleRule: directiveStyleRuleValue"
+  >
+    
+          
+    
+          
+    
+          
+    
+          
+    <div>
+      conditional
+    </div>
+    
+          
+    
+        
+  </div>
+</tst-host>
+`;
+
+exports[`Options should preserve binding comments if option is enabled 1`] = `
+<tst-host
+  boundAttr="bound attr value"
+  boundListener={[Function]}
+  class="boundClass"
+  style="display: block"
+>
+  <div
+    anotherAttr="another attr value"
+    anotherInput="another input static value"
+    anotherListener={[Function]}
+    class="staticClass staticClass directiveClassOn"
+    data-another-attr="another data attr value"
+    data-some-attr="some data attr value"
+    ng-reflect-klass="staticClass"
+    ng-reflect-ng-class="[object Object]"
+    ng-reflect-ng-style="[object Object]"
+    someAttr="some attr value"
+    someInput="some input static value"
+    someListener={[Function]}
+    style="directiveStyleRule: directiveStyleRuleValue"
+  >
+    
+          
+    
+          
+    <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+    <!---->
+    
+          
+    <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+    
+          
+    <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+    <div>
+      conditional
+    </div>
+    
+          
+    <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+    
+        
+  </div>
+</tst-host>
+`;

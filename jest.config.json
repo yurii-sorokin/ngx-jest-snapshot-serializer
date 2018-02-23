@@ -1,0 +1,39 @@
+{
+  "transform": {
+    "^.+\\.ts$": "ts-jest"
+  },
+  "testMatch": [
+    "<rootDir>/test/**/*.spec.ts"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "js",
+    "json"
+  ],
+  "snapshotSerializers": [
+    "<rootDir>/src/index.ts"
+  ],
+  "setupTestFrameworkScriptFile": "<rootDir>/test/framework/setup.ts",
+  "modulePathIgnorePatterns": [
+    "<rootDir>/.history/",
+    "<rootDir>/examples/"
+  ],
+  "coveragePathIgnorePatterns": [
+    "/node_modules/",
+    "<rootDir>/test/framework/"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 90,
+      "functions": 90,
+      "lines": 90,
+      "statements": 90
+    }
+  },
+  "globals": {
+    "ts-jest": {
+      "tsConfigFile": "./test/tsconfig.json",
+      "enableTsDiagnostics": true
+    }
+  }
+}

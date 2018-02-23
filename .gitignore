@@ -195,5 +195,6 @@ $RECYCLE.BIN/
 
 
 ### Project ###
+lib/
 
 # End of https://www.gitignore.io/api/node,linux,macos,windows,webstorm,visualstudiocode

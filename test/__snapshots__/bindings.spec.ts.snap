@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bindings should print (event) listeners 1`] = `
+<tst-host>
+  <div
+    click={[Function]}
+    custom={[Function]}
+  />
+</tst-host>
+`;
+
+exports[`Bindings should print @(host listeners) 1`] = `
+<tst-host
+  click={[Function]}
+  custom={[Function]}
+/>
+`;
+
+exports[`Bindings should print @[host bindings] 1`] = `
+<tst-host
+  class="bound"
+  custom={true}
+  data-title="Yes, I can too!"
+  disabled={false}
+  style="display: block; custom: bound"
+  title="Yes, I can!"
+/>
+`;
+
+exports[`Bindings should print [input] properties with inlined values 1`] = `
+<tst-host>
+  <div
+    booleanProp={false}
+    numberProp={42}
+    objectProp={
+      Object {
+        "deep": Object {
+          "deeper": Object {
+            "deepest": "look at me",
+          },
+        },
+      }
+    }
+    stringProp="inline string"
+  />
+</tst-host>
+`;
+
+exports[`Bindings should print [input] properties with instance values 1`] = `
+<tst-host>
+  <div
+    booleanProp={true}
+    dateProp={2018-02-23T12:17:53.690Z}
+    numberProp={777}
+    objectProp={
+      Object {
+        "deep": Object {
+          "deeper": Object {
+            "deepest": "look at me",
+          },
+        },
+      }
+    }
+    stringProp="instance string"
+  />
+</tst-host>
+`;
+
+exports[`Bindings should print [ngClass] output 1`] = `
+<tst-host>
+  <div
+    class="active"
+    ng-reflect-ng-class="[object Object]"
+  />
+</tst-host>
+`;
+
+exports[`Bindings should print [ngStyle] output 1`] = `
+<tst-host>
+  <div
+    ng-reflect-ng-style="[object Object]"
+    style="display: block; overflow: hidden"
+  />
+</tst-host>
+`;
+
+exports[`Bindings should print actual html for [innerHTML] 1`] = `
+<tst-host>
+  <div
+    class="target"
+  >
+    passed html with updates
+  </div>
+</tst-host>
+`;
+
+exports[`Bindings should print async [input] properties 1`] = `
+<tst-host>
+  <div
+    observableProp={PromiseObservable {}}
+    observablePropWithAsync="observable value"
+    promiseProp={ZoneAwarePromise {}}
+    promisePropWithAsync="promise value"
+  />
+</tst-host>
+`;
