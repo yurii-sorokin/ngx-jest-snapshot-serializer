@@ -18,7 +18,7 @@
   },
   "scripts": {
     "precommit": "run-p lint test build",
-    "prepublish": "run-p lint test build",
+    "prepublishOnly": "run-p lint test build",
     "clean": "del lib",
     "transpile": "tsc -d --outDir lib",
     "copy-types": "copy src/**/*.d.ts lib",
