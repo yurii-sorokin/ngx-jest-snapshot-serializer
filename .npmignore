@@ -5,3 +5,10 @@ examples/
 
 # Sources
 src/
+tsconfig.json
+tslint.json
+
+# Test
+coverage/
+test/
+jest.config.json
