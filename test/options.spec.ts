@@ -64,6 +64,17 @@ describe(`Options`, () => {
     expect(fixture).toMatchSnapshot()
   })
 
+  it(`should ignore properties by regular expression`, () => {
+    expect.addSnapshotSerializer(createFixtureSerializer({
+      ignoreProps: [
+        '/.*some/',
+        '/^ng-reflect/',
+      ]
+    }))
+
+    expect(fixture).toMatchSnapshot()
+  })
+
   it(`should not preserve binding comments by default`, () => {
     expect.addSnapshotSerializer(createFixtureSerializer())
 

@@ -41,6 +41,41 @@ exports[`Options should ignore "ng-version" property by default 1`] = `
 </tst-host>
 `;
 
+exports[`Options should ignore properties by regular expression 1`] = `
+<tst-host
+  boundAttr="bound attr value"
+  boundListener={[Function]}
+  class="boundClass"
+  ng-version="4.4.6"
+  style="display: block"
+>
+  <div
+    anotherAttr="another attr value"
+    anotherInput="another input static value"
+    anotherListener={[Function]}
+    class="staticClass staticClass directiveClassOn"
+    data-another-attr="another data attr value"
+    style="directiveStyleRule: directiveStyleRuleValue"
+  >
+    
+          
+    
+          
+    
+          
+    
+          
+    <div>
+      conditional
+    </div>
+    
+          
+    
+        
+  </div>
+</tst-host>
+`;
+
 exports[`Options should ignore specified properties 1`] = `
 <tst-host
   ng-version="4.4.6"

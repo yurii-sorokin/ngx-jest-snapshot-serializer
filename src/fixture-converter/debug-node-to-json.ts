@@ -1,11 +1,13 @@
 import * as isNil from 'lodash.isnil'
 import * as negate from 'lodash.negate'
-import { getProps, PropsExtractorOptions, DebugNodeJSONProps } from '../props-extractor'
-import { isNodeElement, isNodeComment } from './dom-utils'
+import { getProps, DebugNodeJSONProps } from '../props-extractor'
 import { DebugNode } from '../debug-node'
+import { isNodeElement, isNodeComment } from './dom-utils'
+import { parseMatchOption } from './options-utils'
 
-export interface DebugNodeConverterOptions extends PropsExtractorOptions {
+export interface DebugNodeConverterOptions {
   printComments?: boolean
+  ignoreProps?: string[]
 }
 
 export interface DebugNodeJSON {
@@ -32,7 +34,9 @@ const debugNodeToJSON = (debugNode: DebugNode, options: DebugNodeConverterOption
     return isNodeComment(node) && !printComments ? null : node
   }
 
-  const { innerHTML, ...props } = getProps(debugNode, { ignoreProps })
+  const { innerHTML, ...props } = getProps(debugNode, {
+    ignoreProps: ignoreProps.map(parseMatchOption)
+  })
   const children = innerHTML
     ? getNativeNodeChildren(debugNode)
     : getDebugNodeChildren(debugNode, options)

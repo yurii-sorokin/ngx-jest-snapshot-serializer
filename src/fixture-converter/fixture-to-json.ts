@@ -1,6 +1,8 @@
 import { debugNodeToJSON, DebugNodeConverterOptions, DebugNodeJSON } from './debug-node-to-json'
 import { ComponentFixture } from '../fixture'
 
+export type FixtureConverterOptions = DebugNodeConverterOptions
+
 const defaultHostName = 'ng-component'
 
 const getHostElementName = (fixture: ComponentFixture): string => {
@@ -11,7 +13,7 @@ const getHostElementName = (fixture: ComponentFixture): string => {
   }
 }
 
-const fixtureToJSON = (fixture: ComponentFixture, options: DebugNodeConverterOptions): DebugNodeJSON => {
+const fixtureToJSON = (fixture: ComponentFixture, options: FixtureConverterOptions): DebugNodeJSON => {
   const debugNodeJson = debugNodeToJSON(fixture.debugElement, options) as DebugNodeJSON
 
   return {

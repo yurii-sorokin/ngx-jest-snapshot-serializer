@@ -4,7 +4,7 @@ import { normalizeProp } from './prop-normalizer'
 import { DebugNode } from '../debug-node'
 
 export interface PropsExtractorOptions {
-  ignoreProps?: string[]
+  ignoreProps?: RegExp[]
 }
 
 export interface DebugNodeJSONProps {
@@ -14,8 +14,8 @@ export interface DebugNodeJSONProps {
 const arrayFromString = (string: string, separator: RegExp | string): string[] =>
   string ? string.split(separator) : []
 
-const omitProps = (props: DebugNodeJSONProps, ignoreProps: string[]): DebugNodeJSONProps =>
-  omitBy(props, (value, key) => ignoreProps.includes(key))
+const omitProps = (props: DebugNodeJSONProps, ignoreProps: RegExp[]): DebugNodeJSONProps =>
+  omitBy(props, (value, key) => ignoreProps.some(p => key.match(p)))
 
 const normalizeProps = (props: DebugNodeJSONProps): DebugNodeJSONProps =>
   Object.keys(props)
