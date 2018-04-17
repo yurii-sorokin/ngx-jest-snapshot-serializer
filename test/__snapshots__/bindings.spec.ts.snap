@@ -104,3 +104,15 @@ exports[`Bindings should print async [input] properties 1`] = `
   />
 </tst-host>
 `;
+
+exports[`Bindings should print template [input] properties 1`] = `
+<tst-host>
+  <div
+    template={TemplateRef_ {}}
+  />
+  
+        
+  
+        
+</tst-host>
+`;

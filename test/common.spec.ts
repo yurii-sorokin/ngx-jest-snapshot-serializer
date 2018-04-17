@@ -16,7 +16,7 @@ describe(`Common`, () => {
         `<div
           *ngFor="let item of items; trackBy: trackById"
         >
-          <div>{{item.text}}</div>
+          <div class="content">{{item.text}}</div>
         </div>`
     })
 

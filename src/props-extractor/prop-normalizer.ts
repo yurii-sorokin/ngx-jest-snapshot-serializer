@@ -1,4 +1,4 @@
-const rComplexValue = /Observable|Promise/
+const rComplexValue = /Observable|Promise|Template/
 
 const simplifyComplexValue = (value: any) =>
   Object.create(value.constructor.prototype)

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Common should print only wrapped content 1`] = `
+<tst-host>
+  <div
+    tstWrapperContainer=""
+  >
+    <div
+      class="wrapper"
+    >
+      
+    
+      
+          
+      <div>
+        content
+      </div>
+      
+        
+      
+    
+    </div>
+  </div>
+</tst-host>
+`;

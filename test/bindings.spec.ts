@@ -63,6 +63,24 @@ describe(`Bindings`, () => {
     expect(fixture).toMatchSnapshot()
   }))
 
+
+  it(`should print template [input] properties`, fakeAsync(() => {
+    const fixture = initHostFixture({
+      props: {
+        promiseValue: Promise.resolve('promise value'),
+        observableValue: Observable.fromPromise(Promise.resolve('observable value'))
+      },
+      template:
+        `<div [template]="template"></div>
+        <ng-template #template>template content</ng-template>
+        `
+    })
+
+    fixture.detectChanges()
+
+    expect(fixture).toMatchSnapshot()
+  }))
+
   it(`should print (event) listeners`, () => {
     const fixture = initHostFixture({
       template:

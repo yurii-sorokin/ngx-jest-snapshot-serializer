@@ -5,6 +5,8 @@ export function initHostFixture({
   props = {},
   hooks = {},
   host = {},
+  imports = [],
+  declarations = [],
   template = ''
 } = {}) {
   let fixture: ComponentFixture<any>
@@ -14,13 +16,14 @@ export function initHostFixture({
     template: ``
   })
   class HostComponent {
-    constructor(public injector: Injector) {}
+    constructor(public injector: Injector) { }
   }
 
   TestBed
     .configureTestingModule({
-      declarations: [HostComponent],
-      schemas: [NO_ERRORS_SCHEMA]
+      declarations: [HostComponent, ...declarations],
+      imports: [...imports],
+      schemas: [NO_ERRORS_SCHEMA],
     })
     .overrideComponent(HostComponent, {
       set: {
